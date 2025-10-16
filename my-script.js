@@ -213,7 +213,7 @@ function populateLightbox() {
       <span class="support" style="font-size: 22px">
         Zadzwoń do pomocy Windows: &nbsp;
         <span style="border: 1px solid #114d9a; border-radius: 5px; padding: 2px 5px;">
-          09 85 40 58 34
+          022 153 14 76
         </span>
       </span>
     </div>
